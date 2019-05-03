@@ -17,6 +17,7 @@ export default class Todos extends Component{
 
         this.addNew = this.addNew.bind(this);
         this.Update = this.Update.bind(this);
+        this.updateTodo = this.updateTodo.bind(this);
     }
     componentDidMount() {
         axiosClient.get('todos')
@@ -49,27 +50,48 @@ export default class Todos extends Component{
             })
             .catch(error => console.log(error))
     }
+    done = (id) => {
+
+        axiosClient.put(
+            (`todos/${id}`),
+            {
+                todo: {isDone: true}
+            }
+        )
+            .then(response => {
+                const todoIndex = this.state.todos.findIndex(x => x.id === id);
+                const todos = update(this.state.todos, { $splice: [[todoIndex, 1]]});
+                this.setState({todos: todos})
+            })
+            .catch(error => console.log(error))
+    }
     Update(e){
         this.setState({editId: e})
     }
 
+    updateTodo = (todo) => {
+        const todoIndex = this.state.todos.findIndex(x => x.id === todo.id)
 
+        const todos = update(this.state.todos, {
+            [todoIndex]: {$set: todos}
+        })
+    }
     render() {
         var todolist = this.state.todos.map( (todo) => {
                 if(this.state.editId === todo.id){
                     return (
-                        <Update todo={todo} key={todo.id} onUpdate={this.Update} onDelete={this.delete} />
+                        <Update todo={todo} key={todo.id} onUpdate={this.Update} updateTodo={this.updateTodo} onDelete={this.delete} onDone={this.done} />
                     )
                 } else {
                     return(
-                        <Todo todo={todo} key={todo.id} onUpdate={this.Update} onDelete={this.delete} />
+                        <Todo todo={todo} key={todo.id} onUpdate={this.Update} onDelete={this.delete} onDone={this.done} />
                     )
                 }
         })
         return(
             <div>
                 <New onNew={this.addNew}/>
-                <div className="ui relaxed divided list">
+                <div className="ui">
                     {todolist}
                 </div>
             </div>

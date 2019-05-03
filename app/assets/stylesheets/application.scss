@@ -14,3 +14,15 @@
  *= require_self
  */
 @import "semantic-ui";
+.segment{
+  border: 2px solid transparent!important;
+}
+.card{
+  .header{
+    span{
+      height: auto;
+      min-height: 47px;
+      display: block;
+    }
+  }
+}

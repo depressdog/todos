@@ -1,26 +1,53 @@
 import React, { Component } from 'react'
+import axiosClient from '../../axiosClient'
 
 export default class Update extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            name: this.props.todo.name
+        }
+    }
+    handleInput = (e) => {
+        this.setState({[e.target.name]: e.target.value})
+    };
+    onSubmit = () => {
+        const todo = {
+            name: this.state.name
+        };
+        axiosClient.put(
+            (`todos/${this.props.todo.id}`),
+                {
+                    todo: todo
+                }
+            )
+            .then(response => {
+                this.props.updateTodo(response.data);
+            })
+            .catch(error => console.log(error))
+    }
     render() {
         var tagLabel = 'yellow';
         return(
-            <div className="item" key={this.props.todo.id}>
-                <div className="content">
-                    <form className="ui form">
-                        <div className="ui orange left ribbon label">{this.props.todo.created_at}</div>
-                        <div className="header">
-                            <div className={`ui horizontal label ${tagLabel}`}>work</div>
-                            <input type="text"/>
-                            <div className="ui right floated main menu">
-                                <div className="ui icon buttons">
-                                    <button className="ui green button"><i className="check icon"></i></button>
-                                    <button className="ui orange button"><i className="pencil alternate icon"></i></button>
-                                    <button className="ui red button" onClick={() => { this.props.onDelete(this.props.todo.id)}}><i className="times icon"></i></button>
-                                </div>
+            <div className={`ui segment`} key={this.props.todo.id}>
+                <form className='ui form' onBlur={this.onSubmit}>
+                    <div className="card">
+                        <div className="content">
+                            <div className="meta">
+                                <div className={`ui tag large label`}>work</div>
+                                <div className={`ui tag large label`}>{this.props.todo.created_at}</div>
+                            </div>
+                            <div className="ui header ">
+                                <input type="text" name="name" value={this.state.name} onChange={this.handleInput}/>
+                            </div>
+                            <div className="ui bottom attached icon buttons">
+                                <button className="ui green button" onClick={() => { this.props.onDone(this.props.todo.id)}}><i className="check icon"></i></button>
+                                <button className="ui orange button" onClick={() => { this.onSubmit}}><i className="save alternate icon"></i></button>
+                                <button className="ui red button" onClick={() => { this.props.onDelete(this.props.todo.id)}}><i className="times icon"></i></button>
                             </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         )
     }

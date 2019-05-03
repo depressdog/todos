@@ -10,7 +10,7 @@ const New = ({onNew = f => f}) => {
     };
 
     return(
-        <form className="ui form" onSubmit={submit}>
+        <form className="ui form segment" onSubmit={submit}>
             <div className="ui field">
                 <input  ref={input => name = input}
                         type="text"

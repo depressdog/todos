@@ -1,6 +1,6 @@
 class TodosController < ApplicationController
   def index
-    @todos = Todo.all.order("id asc")
+    @todos = Todo.where.not(isDone: true).order("id desc")
     render json: @todos
   end
   def create
@@ -27,6 +27,6 @@ class TodosController < ApplicationController
 
   protected
   def todo_params
-    params.require(:todo).permit(:name)
+    params.require(:todo).permit(:name, :isDone)
   end
 end
