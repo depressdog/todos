@@ -37,10 +37,19 @@ export default class Todos extends Component{
                 console.log(error)
             })
     }
+    delete = (id) => {
+        axiosClient.delete(`todos/${id}`)
+            .then(response => {
+                const todoIndex = this.state.todos.findIndex(x => x.id === id);
+                const todos = update(this.state.todos, { $splice: [[todoIndex, 1]]});
+                this.setState({todos: todos})
+            })
+            .catch(error => console.log(error))
+    }
     render() {
         var todolist = this.state.todos.map( (todo) => {
             return(
-                <Todo todo={todo} key={todo.id} />
+                <Todo todo={todo} key={todo.id} onDelete={this.delete} />
             )
         })
         return(
