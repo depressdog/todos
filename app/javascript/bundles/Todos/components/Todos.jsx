@@ -4,16 +4,19 @@ import update from 'immutability-helper'
 
 import Todo from './Todo'
 import New from './New'
+import Update from './Update'
 
 export default class Todos extends Component{
     constructor(props) {
         super(props);
 
         this.state = {
-            todos: []
+            todos: [],
+            editId: ""
         };
 
         this.addNew = this.addNew.bind(this);
+        this.Update = this.Update.bind(this);
     }
     componentDidMount() {
         axiosClient.get('todos')
@@ -46,11 +49,22 @@ export default class Todos extends Component{
             })
             .catch(error => console.log(error))
     }
+    Update(e){
+        this.setState({editId: e})
+    }
+
+
     render() {
         var todolist = this.state.todos.map( (todo) => {
-            return(
-                <Todo todo={todo} key={todo.id} onDelete={this.delete} />
-            )
+                if(this.state.editId === todo.id){
+                    return (
+                        <Update todo={todo} key={todo.id} onUpdate={this.Update} onDelete={this.delete} />
+                    )
+                } else {
+                    return(
+                        <Todo todo={todo} key={todo.id} onUpdate={this.Update} onDelete={this.delete} />
+                    )
+                }
         })
         return(
             <div>
