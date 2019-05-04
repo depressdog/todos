@@ -42,6 +42,7 @@ gem "react_on_rails", "11.1.4"
 
 gem 'semantic-ui-sass'
 gem 'jquery-rails'
+gem 'flatpickr_rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

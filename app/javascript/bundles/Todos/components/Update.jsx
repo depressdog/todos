@@ -1,19 +1,24 @@
 import React, { Component } from 'react'
 import axiosClient from '../../axiosClient'
+import DatePicker from 'react-datepicker'
 
 export default class Update extends Component{
     constructor(props){
         super(props);
         this.state={
-            name: this.props.todo.name
+            name: this.props.todo.name,
+            date: this.props.todo.date,
+            startDate: new Date()
         }
+        this.handleChange = this.handleChange.bind(this);
     }
     handleInput = (e) => {
         this.setState({[e.target.name]: e.target.value})
     };
     onSubmit = () => {
         const todo = {
-            name: this.state.name
+            name: this.state.name,
+            date: this.state.date
         };
         axiosClient.put(
             (`todos/${this.props.todo.id}`),
@@ -26,8 +31,12 @@ export default class Update extends Component{
             })
             .catch(error => console.log(error))
     }
+    handleChange(date) {
+        this.setState({
+            date: date
+        });
+    }
     render() {
-        var tagLabel = 'yellow';
         return(
             <div className={`ui segment`} key={this.props.todo.id}>
                 <form className='ui form' onBlur={this.onSubmit}>
@@ -35,7 +44,17 @@ export default class Update extends Component{
                         <div className="content">
                             <div className="meta">
                                 <div className={`ui tag large label`}>work</div>
-                                <div className={`ui tag large label`}>{this.props.todo.created_at}</div>
+                                <div className={`ui tag large label`}>
+                                    <DatePicker
+                                        selected={this.state.startDate}
+                                        onChange={this.handleChange}
+                                        showTimeSelect
+                                        timeFormat="HH:mm"
+                                        timeIntervals={30}
+                                        dateFormat="yyyy-MM-dd HH:mm"
+                                        timeCaption="time"
+                                    />
+                                </div>
                             </div>
                             <div className="ui header ">
                                 <input type="text" name="name" value={this.state.name} onChange={this.handleInput}/>

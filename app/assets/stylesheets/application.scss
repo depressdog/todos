@@ -12,8 +12,11 @@
  *
  *= require_tree .
  *= require_self
+ *= require flatpickr
  */
+
 @import "semantic-ui";
+
 .segment{
   border: 2px solid transparent!important;
 }

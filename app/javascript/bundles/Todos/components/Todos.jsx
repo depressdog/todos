@@ -29,8 +29,9 @@ export default class Todos extends Component{
             .catch(error => console.log(error))
 
     }
-    addNew(name) {
-        axiosClient.post( `todos`, { todo: {name: name} })
+
+    addNew(name, date) {
+        axiosClient.post( `todos`, { todo: {name: name, date: date } })
             .then(response => {
                 const todos = update(this.state.todos, {
                     $splice: [[0, 0, response.data]]

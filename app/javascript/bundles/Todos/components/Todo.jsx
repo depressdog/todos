@@ -10,10 +10,10 @@ export default class Todo extends Component{
                    <div className="content">
                        <div className="meta">
                            <div className={`ui tag large label ${tagLabel}`}>work</div>
-                           <div className={`ui tag large label ${dateLabel}`}>{this.props.todo.created_at}</div>
+                           <div className={`ui tag large label ${dateLabel}`}>{this.props.todo.date}</div>
                        </div>
                        <div className="ui header">
-                           <span>{this.props.todo.name + this.props.todo.isDone}</span>
+                           <span>{this.props.todo.name}</span>
                        </div>
                        <div className="ui bottom attached icon buttons">
                            <button className="ui green button" onClick={() => { this.props.onDone(this.props.todo.id)}}><i className="check icon"></i></button>
