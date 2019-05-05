@@ -49,4 +49,13 @@
       border-top: 2px solid rgba(34, 36, 38, 0.15)!important;
     }
   }
+  &.vertical{
+    &.menu{
+      width: 14rem;
+    }
+  }
+}
+.scrolled{
+  overflow: auto;
+  max-height: 100vh;
 }
