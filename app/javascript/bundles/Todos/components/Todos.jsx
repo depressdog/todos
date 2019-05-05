@@ -30,8 +30,8 @@ export default class Todos extends Component{
 
     }
 
-    addNew(name, date) {
-        axiosClient.post( `todos`, { todo: {name: name, date: date } })
+    addNew(name, date, color_id) {
+        axiosClient.post( `todos`, { todo: {name: name, date: date, color_id: color_id } })
             .then(response => {
                 const todos = update(this.state.todos, {
                     $splice: [[0, 0, response.data]]

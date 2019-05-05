@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_05_092810) do
+ActiveRecord::Schema.define(version: 2019_05_05_102915) do
 
   create_table "colors", force: :cascade do |t|
     t.string "name"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 2019_05_05_092810) do
     t.datetime "updated_at", null: false
     t.boolean "isDone", default: false
     t.datetime "date"
+    t.integer "color_id"
+    t.index ["color_id"], name: "index_todos_on_color_id"
   end
 
 end

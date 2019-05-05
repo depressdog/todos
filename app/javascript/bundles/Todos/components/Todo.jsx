@@ -1,22 +1,38 @@
 import React, { Component } from 'react'
+import axiosClient from "../../axiosClient";
+import update from "immutability-helper";
 
 export default class Todo extends Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            colorName: ''
+        }
+    }
     dateGet = (e) => {
         if(e != null){
             var str =  e.replace('T', ' ')
             return str.replace('.000Z', ' ')
         }
-
+    }
+    componentDidMount(){
+        axiosClient.get(`colors/${this.props.todo.color_id}`)
+            .then(response => {
+                this.setState({
+                    colorName: response.data.name
+                })
+            })
+            .catch(error => console.log(error))
     }
     render() {
         var tagLabel = 'yellow';
-        var dateLabel = 'purple';
+        var dateLabel = this.state.colorName;
         return(
             <div className={`ui ${tagLabel} segment`} key={this.props.todo.id}>
                <div className="card">
                    <div className="content">
                        <div className="meta">
-                           <div className={`ui tag large label ${tagLabel}`}>work</div>
+                           <div className={`ui tag large label ${tagLabel}`}>work {this.props.todo.color_id}</div>
                            <div className={`ui tag large label ${dateLabel}`}>{this.dateGet(this.props.todo.date)}</div>
                        </div>
                        <div className="ui header">
