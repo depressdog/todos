@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 
 export default class Todo extends Component{
+    dateGet = (e) => {
+        if(e != null){
+            var str =  e.replace('T', ' ')
+            return str.replace('.000Z', ' ')
+        }
+
+    }
     render() {
         var tagLabel = 'yellow';
         var dateLabel = 'purple';
@@ -10,7 +17,7 @@ export default class Todo extends Component{
                    <div className="content">
                        <div className="meta">
                            <div className={`ui tag large label ${tagLabel}`}>work</div>
-                           <div className={`ui tag large label ${dateLabel}`}>{this.props.todo.date}</div>
+                           <div className={`ui tag large label ${dateLabel}`}>{this.dateGet(this.props.todo.date)}</div>
                        </div>
                        <div className="ui header">
                            <span>{this.props.todo.name}</span>

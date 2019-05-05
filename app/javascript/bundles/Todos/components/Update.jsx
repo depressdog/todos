@@ -7,8 +7,8 @@ export default class Update extends Component{
         super(props);
         this.state={
             name: this.props.todo.name,
-            date: this.props.todo.date,
-            startDate: new Date()
+            date: '',
+            startDate: new Date(this.props.todo.date)
         }
         this.handleChange = this.handleChange.bind(this);
     }
