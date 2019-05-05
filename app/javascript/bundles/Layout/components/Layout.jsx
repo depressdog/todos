@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 
+import Projects from '../../Projects/components/Projects'
 import Todos from '../../Todos/components/Todos'
 
 export default class Layout extends Component{
@@ -9,7 +10,9 @@ export default class Layout extends Component{
                 <div className="two wide column">
                     <div className="ui left fixed vertical inverted menu scrolled">
                         <a className="item">Features</a>
-                        <a className="item">Testimonials</a>
+                        <div className="item">
+                            <Projects />
+                        </div>
                     </div>
                 </div>
                 <div className="fourteen wide column scrolled">
