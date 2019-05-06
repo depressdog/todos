@@ -54,7 +54,6 @@ export default class New extends Component{
                         />
                     </div>
                     <div className="ui field">
-                        {this.state.color_id}
                         <ColorSelect onColored={this.onColored} />
                     </div>
                 </div>

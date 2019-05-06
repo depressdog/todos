@@ -52,6 +52,10 @@
   &.vertical{
     &.menu{
       width: 14rem;
+      .label{
+        border-right: 0;
+        margin: 0;
+      }
     }
   }
 }

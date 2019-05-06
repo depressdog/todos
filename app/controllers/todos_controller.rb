@@ -1,6 +1,6 @@
 class TodosController < ApplicationController
   def index
-    @todos = Todo.where.not(isDone: true).order("date asc")
+    @todos = Todo.where(date: (Time.now.midnight - 1.day)..Time.now.midnight).order("date asc")
     render json: @todos
   end
   def create
