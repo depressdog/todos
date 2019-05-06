@@ -2,15 +2,13 @@ import React, {Component} from 'react'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
 
-import ColorSelect from '../../Colors/components/ColorSelect'
-
 export default class New extends Component{
     constructor(props){
         super(props)
         this.state = {
             name: '',
             date: '',
-            color_id: '',
+            color_id: "12",
             startDate: new Date()
         }
         this.handleChange = this.handleChange.bind(this);
@@ -28,7 +26,7 @@ export default class New extends Component{
         this.setState({[e.target.name]: e.target.value})
     };
     onColored = (e) => {
-        this.setState({color_id: e})
+        this.setState({color_id: e.target.value})
     }
     render() {
         return(
@@ -54,7 +52,13 @@ export default class New extends Component{
                         />
                     </div>
                     <div className="ui field">
-                        <ColorSelect onColored={this.onColored} />
+                        <label htmlFor="color_id">Приоритет</label>
+                        <select name="color_id" id="color_id" onChange={this.onColored}>
+                            <option value="">Выбор приоритета</option>
+                            <option value="1">высокий</option>
+                            <option value="2">средний</option>
+                            <option value="12">низкий</option>
+                        </select>
                     </div>
                 </div>
                 <button className="ui button green">создать</button>

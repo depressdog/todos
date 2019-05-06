@@ -5,7 +5,8 @@ class ColorSelect extends React.Component{
     constructor(props){
         super(props)
         this.state ={
-            colors: []
+            colors: [],
+            selected: this.props.selected
         }
     }
     componentDidMount() {

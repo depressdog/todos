@@ -9,7 +9,6 @@ export default class Layout extends Component{
             <div className="ui grid">
                 <div className="two wide column">
                     <div className="ui left fixed vertical inverted menu scrolled">
-                        <a className="item">Features</a>
                         <Projects />
                     </div>
                 </div>

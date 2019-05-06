@@ -25,7 +25,7 @@ export default class Project extends Component {
                 {this.props.project.name}
                 <i className="delete icon" onClick={() => { this.props.onDelete(this.props.project.id)}}></i>
 
-                <i className="edit outline icon" ></i>
+                <i className="edit outline icon" onClick={() => { this.props.onUpdate(this.props.project.id)}}></i>
             </a>
         )
     }

@@ -4,12 +4,14 @@ import axiosClient from "../../axiosClient";
 import Project from './Project'
 import update from "immutability-helper";
 import New from "./New";
+import Update from "./Update"
 
 export default class Projects extends Component{
     constructor(props){
         super(props)
         this.state = {
-            projects: []
+            projects: [],
+            editId: ''
         }
         this.addNew = this.addNew.bind(this);
     }
@@ -44,11 +46,28 @@ export default class Projects extends Component{
             })
             .catch(error => console.log(error))
     }
+    Update = (e) => this.setState({editId: e});
+
+    updateProject = (project) => {
+        const projectIndex = this.state.projects.findIndex(x => x.id === project.id)
+
+        const projects = update(this.state.projects, {
+            [projectIndex]: {$set: project}
+        })
+        this.setState({projects: projects})
+    }
     render() {
         var projects = this.state.projects.map(project =>{
-            return(
-                <Project key={project.id} project={project} onDelete={this.delete} />
-            )
+            if(this.state.editId === project.id){
+                return(
+                    <Update key={project.id} project={project} onUpdate={this.Update} updateProject={this.updateProject} onDelete={this.delete} />
+                )
+            } else {
+                return(
+                    <Project key={project.id} project={project} onUpdate={this.Update} onDelete={this.delete} />
+                )
+            }
+
         })
         return(
             <React.Fragment>

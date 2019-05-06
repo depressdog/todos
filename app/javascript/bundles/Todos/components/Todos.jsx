@@ -74,8 +74,9 @@ export default class Todos extends Component{
         const todoIndex = this.state.todos.findIndex(x => x.id === todo.id)
 
         const todos = update(this.state.todos, {
-            [todoIndex]: {$set: todos}
+            [todoIndex]: {$set: todo}
         })
+        this.setState({todos: todos})
     }
     render() {
         var todolist = this.state.todos.map( (todo) => {

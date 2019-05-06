@@ -7,7 +7,7 @@ export default class Update extends Component{
         super(props);
         this.state={
             name: this.props.todo.name,
-            date: '',
+            date: this.props.todo.date,
             startDate: new Date(this.props.todo.date)
         }
         this.handleChange = this.handleChange.bind(this);
@@ -33,6 +33,7 @@ export default class Update extends Component{
     }
     handleChange(date) {
         this.setState({
+            startDate: date,
             date: date
         });
     }

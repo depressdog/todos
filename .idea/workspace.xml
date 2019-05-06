@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d29fb4bb-3c6e-48be-81b3-ae144a3d6295" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/javascript/bundles/Projects/components/Update.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/todos_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/todos_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/bundles/Colors/components/ColorSelect.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/bundles/Colors/components/ColorSelect.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/bundles/Layout/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/bundles/Layout/components/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/bundles/Projects/components/New.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/bundles/Projects/components/New.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/bundles/Projects/components/Project.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/bundles/Projects/components/Project.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/bundles/Projects/components/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/bundles/Projects/components/Projects.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/bundles/Todos/components/New.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/bundles/Todos/components/New.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todos.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/bundles/Todos/components/Update.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/bundles/Todos/components/Update.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -34,22 +34,10 @@
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Layout/components/Layout.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="81" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="81" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Projects/components/Projects.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="580">
-                  <caret line="49" column="82" selection-start-line="49" selection-start-column="82" selection-end-line="49" selection-end-column="82" />
+                <state relative-caret-position="625">
+                  <caret line="59" column="58" lean-forward="true" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -57,11 +45,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Projects/components/Project.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="104" selection-start-line="25" selection-start-column="104" selection-end-line="25" selection-end-column="104" />
+                <state relative-caret-position="405">
+                  <caret line="27" column="104" selection-start-line="27" selection-start-column="104" selection-end-line="27" selection-end-column="104" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -72,10 +60,19 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Projects/components/New.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+                <state>
+                  <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Projects/components/Update.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
                   <folding>
-                    <element signature="e#0#38#0" expanded="true" />
+                    <element signature="e#0#40#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -97,8 +94,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todos.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="506">
-                  <caret line="83" column="132" selection-start-line="83" selection-start-column="110" selection-end-line="83" selection-end-column="132" />
+                <state relative-caret-position="416">
+                  <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                     <element signature="e#561#789#0" />
@@ -108,10 +105,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todo.jsx">
+            <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/Update.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="42" selection-start-line="42" selection-end-line="43" />
+                <state relative-caret-position="340">
+                  <caret line="31" column="47" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="31" selection-end-column="47" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -122,8 +119,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/New.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="385">
-                  <caret line="34" column="70" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="70" />
+                <state relative-caret-position="-30">
+                  <caret line="4" selection-start-line="4" selection-end-line="4" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -132,10 +129,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todo.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="615">
+                  <caret line="41" column="122" lean-forward="true" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="122" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/todos_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -183,30 +192,31 @@
         <option value="$PROJECT_DIR$/db/migrate/20190504014308_remove_date_to_todos.rb" />
         <option value="$PROJECT_DIR$/app/models/todo.rb" />
         <option value="$PROJECT_DIR$/app/models/color.rb" />
-        <option value="$PROJECT_DIR$/app/javascript/bundles/Todos/components/Update.jsx" />
-        <option value="$PROJECT_DIR$/app/javascript/bundles/Colors/components/ColorSelect.jsx" />
-        <option value="$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todos.jsx" />
         <option value="$PROJECT_DIR$/app/controllers/colors_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/javascript/packs/home-bundle.js" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/javascript/bundles/Layout/components/Layout.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todo.jsx" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/javascript/bundles/Todos/components/New.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/bundles/Projects/components/New.jsx" />
         <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/todos_controller.rb" />
-        <option value="$PROJECT_DIR$/app/javascript/bundles/Projects/components/Projects.jsx" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/javascript/bundles/Layout/components/Layout.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todos.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/bundles/Todos/components/New.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/bundles/Projects/components/Project.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/bundles/Projects/components/Projects.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/bundles/Colors/components/ColorSelect.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/bundles/Todos/components/Update.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/bundles/Projects/components/Update.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="793" />
+    <option name="x" value="1241" />
     <option name="y" value="27" />
-    <option name="width" value="1767" />
+    <option name="width" value="1319" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -261,6 +271,40 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="javascript" type="462c0819:PsiDirectoryNode" />
               <item name="bundles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="Projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="Projects" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="todos" type="b2602c69:ProjectViewProjectNode" />
@@ -460,15 +504,15 @@
       <workItem from="1556787065820" duration="12463000" />
       <workItem from="1556844914710" duration="40463000" />
       <workItem from="1557049563506" duration="11159000" />
-      <workItem from="1557073394109" duration="14699000" />
+      <workItem from="1557073394109" duration="22428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78784000" />
+    <option name="totallyTimeSpent" value="86513000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="793" y="27" width="1767" height="1053" extended-state="4" />
+    <frame x="1241" y="27" width="1319" height="1053" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24985473" />
@@ -682,26 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/Update.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Colors/components/ColorSelect.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/home-bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -723,20 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="701">
@@ -744,20 +754,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Layout/components/Layout.jsx">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="81" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/New.jsx">
+    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Layout/components/Layout.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="34" column="70" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="70" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -766,17 +773,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/todos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/New.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todo.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="122" lean-forward="true" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="122" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Projects/components/New.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state>
+          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Projects/components/Project.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="104" selection-start-line="27" selection-start-column="104" selection-end-line="27" selection-end-column="104" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Colors/components/ColorSelect.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todos.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#561#789#0" />
           </folding>
         </state>
       </provider>
@@ -788,41 +850,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todos.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="83" column="132" selection-start-line="83" selection-start-column="110" selection-end-line="83" selection-end-column="132" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#561#789#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Projects/components/Projects.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="49" column="82" selection-start-line="49" selection-start-column="82" selection-end-line="49" selection-end-column="82" />
+        <state relative-caret-position="625">
+          <caret line="59" column="58" lean-forward="true" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/Todo.jsx">
+    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Todos/components/Update.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" selection-start-line="42" selection-end-line="43" />
+        <state relative-caret-position="340">
+          <caret line="31" column="47" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="31" selection-end-column="47" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Projects/components/Project.jsx">
+    <entry file="file://$PROJECT_DIR$/app/javascript/bundles/Projects/components/Update.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="104" selection-start-line="25" selection-start-column="104" selection-end-line="25" selection-end-column="104" />
+        <state relative-caret-position="240">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

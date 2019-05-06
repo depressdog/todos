@@ -1,6 +1,7 @@
 class TodosController < ApplicationController
   def index
-    @todos = Todo.where(date: (Time.now.midnight - 1.day)..Time.now.midnight).order("date asc")
+    # @todos = Todo.where(date: (Time.now.midnight - 1.day)..Time.now.midnight).order("date asc")
+    @todos = Todo.where(isDone: false).order("color_id asc")
     render json: @todos
   end
   def create
@@ -23,6 +24,9 @@ class TodosController < ApplicationController
     else
       render json: @todo.errors, status: :unprocessable_entity
     end
+  end
+  def archive
+    @todos = Todo.where(isDone: true)
   end
 
   protected
